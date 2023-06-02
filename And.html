@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The And Gate</title>
+	<style type="text/css">
+		body{
+			background-image: url("homepage.jpg");
+			background-size: cover;
+			place-items: center;
+			background-repeat: no-repeat;
+		}
+
+		p{
+			background-image: url("bird.jpg");
+			background-size: cover;
+			place-items: center;
+			background-repeat: no-repeat;
+			border-radius: 5px;
+			margin-left: 300px;
+			margin-right: 500px;
+			font-size:18px;
+
+		}
+
+	</style>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse"> <!-- We can also use inverse for black color default for default -->
+		<div class="container-fluid">
+			<div class="nevbar-header" >
+				<a class="navbar-brand" href="https://en.wikipedia.org/wiki/Logic_gate">Gates Tutorial</a>			
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="Home.html">Home page</a></li>
+				<li><a href="About.html">About</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Type <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="And.html">AND Gate</a></li>
+						<li><a href="nand.html">NAND Gate</a></li>
+						<li><a href="Or.html">OR Gate</a></li>
+						<li><a href="Xor.html">XOR Gate</a></li>
+						<li><a href="Not.html">NOT Gate</a></li>
+						<li><a href="Nor.html">NOR Gate</a></li>
+			 		</ul>
+	 			</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+				 <div class="input-group">
+				 	<input type="text" class="form-control" placeholder="Search">
+				 	<div class="input-group-btn">
+				 		<button class="btn btn-default" type="submit">
+				 			<i class="glyphicon glyphicon-search"></i>
+				 		</button>
+				 	</div>
+				 </div>
+			</form>
+		</div>
+	</nav>
+<table style="background-color: white;" class="table table-striped table-bordered table-hover">
+		<tr>
+			<th><center>Truth Table</center></th>
+		</tr>
+		<tr>
+			<th>Left</th>
+			<th>Right</th>
+		</tr>
+		<tr style="background-color: white;">
+			<th>Top</th>
+			<th>Bottom</th>
+			<th>Output</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+</table>
+<p>
+One of the easiest multiple-input gates to understand is the AND gate, so-called because the output of this gate will be “high” (1) if and only if all inputs (first input and the second input and . . .) are “high” (1). If any input(s) is “low” (0), the output is guaranteed to be in a “low” state as well.
+In case you might have been wondering, AND gates are made with more than three inputs, but this is less common than the simple two-input variety.
+
+ 
+
+Two-input AND Gate’s Truth Table
+
+A two-input AND gate’s truth table looks like this:
+AND Gate
+The AND gate is a logic circuit that requires all inputs to be TRUE at the same time in order for the output to be TRUE.
+
+Logic Symbol
+The standard symbol for the AND gate is shown in the figure below. Variations of this standard symbol may be encountered. These variations become necessary to illustrate that an AND gate may have more than two inputs.
+
+AND gate
+AND gate.
+If we apply two variables, A and B, to the inputs of the AND gate, then both A and B would have to be TRUE at the same time to produce the desired TRUE output. The symbol f designates the output function. The Boolean expression for this operation is f = A · B or f = AB. The expression is spoken, "f = A AND B." The dot, or lack of, indicates the AND function.
+
+AND Gate Operation
+We can demonstrate the operation of the AND gate with a simple circuit that has two switches in series as shown in the figure below. You can see that both switches would have to be closed at the same time to light the lamp (view 1). Any other combination of switch positions (view 2) would result in an open circuit and the lamp would not light (logic 0).
+
+AND gate equivalent circuit
+AND gate equivalent circuit: 1. Logic 1 state; 2. Logic 0 state.
+Now look at the figure below. Signal A is applied to one input of the AND gate and signal B to the other. At time t0, both inputs are LOW (logic 0) and f is LOW. At t1, B goes HIGH (logic 1); A remains LOW; and as a result, f remains LOW. At t2, B goes LOW and A goes HIGH; f, however, is still LOW, because the proper input conditions have not been satisfied (A and B both HIGH at the same time). At t4, both A and B are HIGH. As a result, f is HIGH. The input requirements have been satisfied, so the output is HIGH (logic 1).
+
+AND gate input and output signals
+AND gate input and output signals.
+Truth Table
+Now let’s refer to the figure below, where a Truth Table is shown. As we mentioned earlier, the Truth Table is a chart that shows all possible combinations of inputs and the resulting outputs. Compare the AND gate Truth Table (figure below) with the input signals shown in the figure above. The first combination (A = 0, B = 0) corresponds to t0 in the figure above; the second to t1; the third to t2; and the last to t4. When constructing a Truth Table, you must include all possible combinations of the inputs, including the all 0s combination.
+
+AND gate Truth Table
+
+
+A Truth Table representing an AND gate with three inputs (A, B, and C) is shown below. Remember that the two-input AND gate has four possible combinations, with only one of those combinations providing a HIGH output. An AND gate with three inputs has eight possible combinations, again with only one combination providing a HIGH output. Make sure you include all possible combinations. To check if you have all combinations, raise 2 to the power equal to the number of input variables. This will give you the total number of possible combinations. For example:
+
+Example 1: AB -> 22 = 4 combinations
+Example 2: ABC -> 23 = 8 combinations
+
+AND gate Truth Table - 3 inputs
+</p>
+</body>
+</html>

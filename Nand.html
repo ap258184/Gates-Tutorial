@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Nand Gate</title>
+	<style type="text/css">
+		body{
+			background-image: url("homepage.jpg");
+			background-size: cover;
+			place-items: center;
+			background-repeat: no-repeat;
+		}
+
+		p{
+			background-image: url("bird.jpg");
+			background-size: cover;
+			place-items: center;
+			background-repeat: no-repeat;
+			border-radius: 5px;
+			margin-left: 200px;
+			font-size:18px;
+
+		}
+
+	</style>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse"> <!-- We can also use inverse for black color default for default -->
+		<div class="container-fluid">
+			<div class="nevbar-header" >
+				<a class="navbar-brand" href="https://en.wikipedia.org/wiki/Logic_gate">Gates Tutorial</a>			
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="Home.html">Home page</a></li>
+				<li><a href="About.html">About</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Type <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="And.html">AND Gate</a></li>
+						<li><a href="Nand.html">NAND Gate</a></li>
+						<li><a href="Or.html">OR Gate</a></li>
+						<li><a href="Xor.html">XOR Gate</a></li>
+						<li><a href="Not.html">NOT Gate</a></li>
+						<li><a href="Nor.html">NOR Gate</a></li>
+			 		</ul>
+	 			</li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+				 <div class="input-group">
+				 	<input type="text" class="form-control" placeholder="Search">
+				 	<div class="input-group-btn">
+				 		<button class="btn btn-default" type="submit">
+				 			<i class="glyphicon glyphicon-search"></i>
+				 		</button>
+				 	</div>
+				 </div>
+			</form>
+		</div>
+	</nav>
+<table style="background-color: white;" class="table table-striped table-bordered table-hover">
+		<tr>
+			<th><center>Truth Table</center></th>
+		</tr>
+		<tr>
+			<th>Left</th>
+			<th>Right</th>
+		</tr>
+		<tr style="background-color: white;">
+			<th>Top</th>
+			<th>Bottom</th>
+			<th>Output</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+</table>
+<p><q>A variation on the idea of the AND gate is called the NAND gate. The word “NAND” is a verbal contraction of the words NOT and AND.
+
+Essentially, a NAND gate behaves the same as an AND gate with a NOT (inverter) gate connected to the output terminal. To symbolize this output signal inversion, the NAND gate symbol has a bubble on the output line.
+
+The truth table for a NAND gate is as one might expect, exactly opposite as that of an AND gate
+<img src="https://www.allaboutcircuits.com/uploads/articles/2-input-nand-gate.jpg">
+</q></p>
+</body>
+</html>
